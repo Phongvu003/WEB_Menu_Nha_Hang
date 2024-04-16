@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="trangchu.js"></script>
+    <title>Document</title>
+</head>
+<body >
+  <div class="main">
+
+    <!--Nav Bar-->
+
+    <div id="thanhmenu">
+      <nav class="navbar container-fluid fixed-top">
+        <a href="trangchu.html">
+            <img src="anh/logo.png" class="logo">
+        </a>
+        <input type="checkbox" id="nutbar">
+        <label for="nutbar"><img src="anh/bar.png" style="margin-top: 8px;"></label>
+        <div class="menu-bar">
+            <ul class="list-menubar ">
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="gioithieu.html">Giới thiệu</a></li>
+              <li>
+                <div class="dropdown">
+                  <a data-toggle="dropdown" href="">Menu</a>
+                  <div class="dropdown-menu" style="background-color: #d1d1d1;">
+                    <a class="dropdown-item" href="menu.html">Tất cả MENU</a>
+                    <a class="dropdown-item" href="trangchu.html">Món Chính</a>
+                    <a class="dropdown-item" href="trangdrink.html">Nước Uống</a>
+                    <a class="dropdown-item" href="trangbanh.html">Tráng Miệng</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="monannoibat.html">Món ăn nổi bật</a></li>
+              <li>
+                <a href="dangnhap.html"><img src="anh/user.png" alt=""></a>
+              </li>
+              <li>
+                <a href=""><img src="anh/fb.png" alt=""></a>
+              </li>
+              <li>
+                <a href=""><img src="anh/ig.png" alt=""></a>
+              </li>
+            </ul>
+            
+        </div>
+      </nav>
+    </div>
+
+                        <!--BANNER-->
+
+    <div id="banner">
+      <div class="content">
+        <p class="title">Welcome to Restaurant</p>
+        <p class="content ">Món ăn đa dạng</p>
+        <div class="row justify-content-center">
+          <button type="button" class="btn btn-warning ">Xem Menu</button>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <div class="container-fluid">
+        <h1 class="text-center"> Về chúng tôi </h1>
+        
+                        <!-- ABOUT ME -->
+        
+        <div id="about-me">
+          <div class="row">
+            <div class="col-lg-6 about-me-comment">
+              <h3>Bếp Nhà Làm</h3>
+              <p class="content">
+                Nhà hàng chúng tôi luôn luôn đặt khách hàng lên hàng đầu, tận tâm phục vụ, mang lại cho khách hàng những trãi nghiệm tuyệt với nhất. Các món ăn với công thức độc quyền sẽ mang lại hương vị mới mẻ cho thực khách.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-image">
+                <img src="anh/banner2.png" class="mx-auto d-block rounded-circle img-fluid" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+                        <!--SLIDE-->
+
+    <div id="slide">
+      <h1 class="text-center">Hình Ảnh Về Chúng Tôi</h1>
+      <div class="container-fluid">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+        
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="anh/slide1.png" width="100%" height="462">
+            </div>
+            <div class="carousel-item">
+              <img src="anh/slide2.png" width="100%" height="462">
+            </div>
+            <div class="carousel-item">
+              <img src="anh/slide3.png" width="100%" height="462">
+            </div>
+          </div>
+        
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        
+        </div>
+      </div>
+    </div>
+
+                        <!--Danh Mục MENU-->
+
+    <div id="menu">
+      <div class="container-fluid">
+        <div class="text-center">
+          <h1 class="text-center">MENU</h1>
+          <div class="text-center">
+            <div class="menu-chon btn-group ">
+              <a href="#"><button type="button" class=" btn btn-warning">Món Chính</button></a>
+              <a href="trangdrink.html"><button type="button" class=" btn btn-warning">Nước Uống</button></a>
+              <a href="trangbanh.html"><button type="button" class=" btn btn-warning">Tráng Miệng</button></a>
+            </div>
+          </div>
+        </div>
+        <div id="menu-content" class="col-12">
+          <ul class="list-group list-group-horizontal row" style="padding: 30px;">
+            <li class="menu-list list-group-item list-group-item-light col-sm">
+              <a href="">
+                <div class="image">
+                  <img src="anh/food4.jpg" class="img-fluid">
+                </div>
+                <h4>Salad rau củ 4 mùa</h4>
+                <h5 class="content">
+                  120.000 VND
+                </h5>
+                <div class=" justify-content-center">
+                  <button type="button" class="btn btn-warning ">Xem chi tiết</button>
+                </div>
+              </a>
+            </li>
+            <li class="menu-list list-group-item list-group-item-light col-sm">
+              <a href="">
+                <div class="image">
+                  <img src="anh/food2.jpg" class="img-fluid">
+                </div>
+                <h4>Cơm chiên hải sản</h4>
+                <h5 class="content">
+                  120.000 VND
+                </h5>
+                <div class=" justify-content-center">
+                  <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                </div>
+              </a>
+            </li>
+            <li class="menu-list list-group-item list-group-item-light col-sm">
+              <a href="">
+                <div class="image">
+                  <img src="anh/food3.jpg" class="img-fluid">
+                </div>
+                <h4>Mì sốt kem nấm</h4>
+                <h5 class="content">
+                  120.000 VND
+                </h5>
+                <div class=" justify-content-center">
+                  <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                </div>
+              </a>
+            </li>
+            <li class="menu-list list-group-item list-group-item-light col-sm">
+              <a href="">
+                <div class="image">
+                  <img src="anh/food1.jpg" class="img-fluid">
+                </div>
+                <h4>Hủ tiếu bò áp chảo</h4>
+                <h5 class="content">
+                  120.000 VND
+                </h5>
+                <div class=" justify-content-center">
+                  <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu-content" class="col-12">
+          <ul class="list-group list-group-horizontal row" style="padding: 30px;">
+            <li class="menu-list list-group-item list-group-item-light col-sm">
+              <a href="">
+                <div class="image">
+                  <img src="anh/food5.jpg" class="img-fluid">
+                </div>
+                <h4>Nem lụa thịt nướng</h4>
+                <h5 class="content">
+                  120.000 VND
+                </h5>
+                <div class=" justify-content-center">
+                  <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                </div>
+              </a>
+            </li>
+            <li class="menu-list list-group-item list-group-item-light col-sm">
+              <a href="">
+                <div class="image">
+                  <img src="anh/food6.png" class="img-fluid">
+                </div>
+                <h4>Cơm chiên ức gà</h4>
+                <h5 class="content">
+                  120.000 VND
+                </h5>
+                <div class=" justify-content-center">
+                  <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                </div>
+              </a>
+            </li>
+            <li class="menu-list list-group-item list-group-item-light col-sm">
+              <a href="">
+                <div class="image">
+                  <img src="anh/food7.png" class="img-fluid">
+                </div>
+                <h4>Sụn gà chiên giòn</h4>
+                <h5 class="content">
+                  120.000 VND
+                </h5>
+                <div class=" justify-content-center">
+                  <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                </div>
+              </a>
+            </li>
+            <li class="menu-list list-group-item list-group-item-light col-sm">
+              <a href="">
+                <div class="image">
+                  <img src="anh/food8.png" class="img-fluid">
+                </div>
+                <h4>Ức gà xốt chanh</h4>
+                <h5 class="content">
+                  120.000 VND
+                </h5>
+                <div class=" justify-content-center">
+                  <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+                        <!--Danh Mục Nổi Bật-->
+
+    <div id="noibat">
+      <div class="container-fluid">
+        <div class="container col-12">
+          <h1 class="text-center">Món ăn nổi bật</h1>
+          <div id="menu-content" class="col-12">
+            <ul class="list-group list-group-horizontal row">
+              <li class="menu-list list-group-item list-group-item-light col-sm">
+                <a href="">
+                  <div class="image">
+                    <img src="anh/food4.jpg" class="img-fluid">
+                  </div>
+                  <h4>Salad rau củ 4 mùa</h4>
+                  <h5 class="content">
+                    120.000 VND
+                  </h5>
+                  <div class=" justify-content-center">
+                    <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                  </div>
+                </a>
+              </li>
+              <li class="menu-list list-group-item list-group-item-light col-sm">
+                <a href="">
+                  <div class="image">
+                    <img src="anh/food10.png" class="img-fluid">
+                  </div>
+                  <h4>Mì Ý sốt thịt bò bằm</h4>
+                  <h5 class="content">
+                    120.000 VND
+                  </h5>
+                  <div class=" justify-content-center">
+                    <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                  </div>
+                </a>
+              </li>
+              <li class="menu-list list-group-item list-group-item-light col-sm">
+                <a href="">
+                  <div class="image">
+                    <img src="anh/food7.png" class="img-fluid">
+                  </div>
+                  <h4>Sụn gà chiên giòn</h4>
+                  <h5 class="content">
+                    120.000 VND
+                  </h5>
+                  <div class=" justify-content-center">
+                    <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                  </div>
+                </a>
+              </li>
+              <li class="menu-list list-group-item list-group-item-light col-sm">
+                <a href="">
+                  <div class="image">
+                    <img src="anh/drink1.png" class="img-fluid">
+                  </div>
+                  <h4>Trà lài kim quất</h4>
+                  <h5 class="content">
+                    120.000 VND
+                  </h5>
+                  <div class=" justify-content-center">
+                    <button onclick="nhan()" class="btn btn-warning ">Xem chi tiết</button>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="text-center">
+            <div class="number btn-group btn-group-sm">
+              <button type="button" class="btn btn-warning">1</button>
+              <button type="button" class="btn btn-warning">2</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div id="comment">
+      <div class="container">
+        <h1 class="text-center">Phản Hồi Khách Hàng</h1>
+        <div id="cmt" class="carousel slide row" data-ride="carousel">
+
+          <div class="col-8 m-auto  ">
+            <ul class="carousel-indicators" style="margin-bottom: 0px;">
+              <li data-target="#cmt" style="background-color: whitesmoke;" data-slide-to="0" class="active"></li>
+              <li data-target="#cmt" style="background-color: whitesmoke;" data-slide-to="1"></li>
+              <li data-target="#cmt" style="background-color: whitesmoke;" data-slide-to="2"></li>
+            </ul>
+          
+            <div class="carousel-inner">
+              <div class="carousel-item  active">
+                <div class="phanhoi" height="250">
+                  <img src="anh/avt.png" alt="">
+                  <h3>Khách hàng đã bình luận</h3>
+                  <p>Quán có view đẹp, nhân viên phục vụ tốt và nhiều món và ngon</p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="phanhoi" height="250">
+                  <img src="anh/avt2.png" alt="">
+                  <h3>Khách hàng đã bình luận</h3>
+                  <p>Quán có view đẹp, nhân viên phục vụ tốt và nhiều món và ngon</p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="phanhoi" height="250">
+                  <img src="anh/avt3.png" alt="">
+                  <h3>Khách hàng đã bình luận</h3>
+                  <p>Quán có view đẹp, nhân viên phục vụ tốt và nhiều món và ngon </p>
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#cmt" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#cmt" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>      
+
+                                <!--Hộp Backtop-->   
+    
+    <div class="top">
+      <a id="back-to-top" href="#" class="btn btn-warning back-to-top" style="border-radius: 50%; padding: 10px; border: none;"><img src="anh/top.png" alt=""></a>
+    </div>
+ 
+                                <!--Hộp ChatBot-->
+    
+    <button class="btn-warning nut-mo-chatbox" onclick="moForm()"><img src="anh/chatbot.png" alt=""></button>
+    <div class="Chatbox" id="myForm">
+      <form action="" class="form-container">
+        <h1 class="text-center">Hỗ Trợ Khách Hàng</h1>
+    
+        <label for="msg"><b>Viết câu hỏi của bạn ở đây</b></label>
+        <textarea placeholder="Bạn hãy nhập câu hỏi"  rows="5" name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Gửi</button>
+        <button type="button" class="btn nut-dong-chatbox" onclick="dongForm()">Đóng</button>
+      </form>
+    </div>                            
+
+                                <!-- footer -->
+    <div id="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <img src="anh/logo.png" alt="">
+            <h3>Bếp Nhà Làm</h3>
+            <p class="content">
+              Nhà hàng chúng tôi luôn luôn đặt khách hàng lên hàng đầu, tận tâm phục vụ, mang lại cho khách hàng những trãi nghiệm tuyệt với nhất. Các món ăn với công thức độc quyền sẽ mang lại hương vị mới mẻ cho thực khách.
+            </p>
+
+          </div>
+          <div class="col">
+            <h3>Địa chỉ cửa hàng:</h3>
+            <p>Đ/c: Số 2 Trường Sa, phường 17, Quận Bình Thạch.</p>
+            <p>Liên hệ chúng tôi: 0941 000 000</p>
+          </div>
+          <div class="col">
+            <h3>Thông tin thêm về chúng tôi : </h3>
+            <ul class="list-group list-group-horizontal" >
+              <li class="list-group-item" style="background-color: #10302c; border: none;"><img src="anh/fb.png"></li>
+              <li class="list-group-item" style="background-color: #10302c; border: none;"><img src="anh/ytb.png"></li>
+              <li class="list-group-item" style="background-color: #10302c; border: none;"><img src="anh/ig.png"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

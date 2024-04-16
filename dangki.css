@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background-color: #10302c;
+}
+
+.khung{
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+    background-color: #143b36;
+    color: blanchedalmond;
+}
+
+h1{
+    text-align: center;
+    color: #d69c52;
+}
+
+p{
+    margin-top: 20px;
+}

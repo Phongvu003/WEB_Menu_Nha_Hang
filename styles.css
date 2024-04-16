@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background-color: #d1d1d1;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.list-menubar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.list-menubar li {
+    margin: 0 10px;
+}
+
+.list-menubar li a {
+    text-decoration: none;
+}
+
+.list-menubar li a:hover {
+    color: #000;
+}
+
+#nutbar,
+.navbar label {
+    display: none;
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .menu-bar {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    .list-menubar {
+        flex-direction: column;
+        padding: 20px;
+        border-top: 1px solid #000;
+    }
+
+    .list-menubar li {
+        margin: 10px 0;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    #nutbar:checked~.menu-bar {
+        max-height: 100%;
+    }
+}
+
+
+#banner {
+    width: 100%;
+    background-image: url(anh/banner.png);
+    display: flex;
+    padding: 80px 100px 0px 100px;
+}
+
+#banner .content {
+    margin: 60px auto;
+}
+
+#banner .content p {
+    color: #d69c52;
+    font-size: 35px;
+    text-align: center;
+}
+
+#banner .content button {
+    border-radius: 20px;
+}
+
+#body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #143b36;
+}
+
+#body h1 {
+    margin: 15px auto;
+    color: #d69c52;
+    font-size: 45px;
+}
+
+#about-me {
+    color: white;
+    margin: 50px 0px;
+}
+
+#about-me .about-me-comment {
+    margin: 20px 0px;
+    padding: 20px 30px;
+}
+
+#about-me .content {
+    font-size: 30px;
+}
+
+#about-me h3 {
+    margin: 15px auto;
+    font-size: 35px;
+    color: #d69c52;
+}
+
+#about-me .about-image {
+    margin: 20px;
+    padding: 20px 0px;
+}
+
+#slide {
+    background-color: #10302c;
+    display: grid;
+}
+
+#slide h1 {
+    margin: 50px;
+    color: #d69c52;
+    font-size: 45px;
+}
+
+#demo {
+    margin-bottom: 100px;
+}
+
+#menu {
+    background-color: #143b36;
+    box-sizing: border-box;
+    padding: 60px 0px;
+}
+
+.image {
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 5s;
+}
+
+.image:hover img {
+    scale: 1.75;
+}
+
+
+#menu h1 {
+    color: #d69c52;
+    font-size: 45px;
+    margin: 30px auto;
+}
+
+#menu .menu-chon button {
+    margin: 30px 15px;
+    border-radius: 10px;
+}
+
+#menu-content ul li {
+    background-color: #143b36;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 30px 10px;
+}
+
+#menu-content .menu-list {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#menu-content .menu-list a,
+h4,
+span {
+    text-decoration: none;
+}
+
+#menu-content .menu-list:hover {
+    border: 1px solid #d69c52;
+}
+
+#menu-content .menu-list h4 {
+    color: #fff;
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+#menu-content .menu-list h5 {
+    color: red;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+#menu-content .menu-list button {
+    margin-top: 20px;
+}
+
+#noibat {
+    background-color: #10302c;
+    display: grid;
+    padding: 60px 0px;
+}
+
+#noibat h1 {
+    margin: 30px;
+    color: #d69c52;
+    font-size: 45px;
+}
+
+/* #noibat .number button{
+    margin: 10px 5px;
+    border-radius: 50%;
+} */
+
+#comment {
+    background-color: #143b36;
+    padding: 50px;
+}
+
+#comment h1 {
+    color: #d69c52;
+    font-size: 45px;
+    margin: 20px 0px;
+}
+
+#comment ul {
+    margin-top: 30px;
+}
+
+#comment .phanhoi {
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+#comment .phanhoi img {
+    margin: 0 auto;
+}
+
+#comment .phanhoi h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#comment .phanhoi p {
+    margin: 5px auto;
+}
+
+#footer {
+    padding: 50px;
+    background-color: #10302c;
+}
+
+#footer h3,
+p {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+#footer h3 {
+    font-size: 30px;
+    color: #d69c52;
+}
+
+#footer p {
+    color: #fff;
+}
+
+/* Chatbot */
+
+/* Nút Để Mở Chatbox */
+.nut-mo-chatbox {
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+}
+
+/* Ẩn chatbox mặc định */
+.Chatbox {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Thêm style cho form */
+.form-container {
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* thiết lập style textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* thiết lập style cho nút submit trong form*/
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+/* Thiết lập màu nền cho nút đóng chatbox */
+.form-container .nut-dong-chatbox {
+    background-color: red;
+}
+
+/* back-top */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
